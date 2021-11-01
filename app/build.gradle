@@ -43,6 +43,19 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    implementation 'com.squareup.okhttp3:okhttp:3.14.9'
+//    implementation 'com.squareup.okhttp3:okhttp:3.14.9'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
+
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'//Gson的支持 [常用] [可选]
+    implementation 'com.squareup.retrofit2:converter-simplexml:2.9.0'//simplexml的支持 [可选]
+    implementation 'com.squareup.retrofit2:converter-jackson:2.9.0'//jackson的支持 [可选]
+    implementation 'com.squareup.retrofit2:converter-protobuf:2.9.0'//protobuf的支持 [可选]
+    implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'//moshi的支持 [可选]
+    implementation 'com.squareup.retrofit2:converter-wire:2.9.0'//wire的支持 [可选]
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'//String的支持 [可选]
+
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'//RxJava支持 [常用] [可选]
+    implementation 'com.squareup.retrofit2:adapter-java8:2.9.0'//java8支持 [可选]
+    implementation 'com.squareup.retrofit2:adapter-guava:2.9.0'//guava支持 [可选]
 }
