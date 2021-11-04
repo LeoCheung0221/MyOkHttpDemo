@@ -58,16 +58,16 @@ class MainActivity2 : AppCompatActivity() {
 //            println("同步请求失败-> code = ${response.code()}, errMsg = ${response.message()}")
 //        }
 
-//        call.enqueue(object : Callback<HttpResponse> {
-//            override fun onResponse(call: Call<HttpResponse>, response: Response<HttpResponse>) {
-//                val dataBean = response.body()
-//                println("异步请求成功-> ${dataBean.toString()}")
-//            }
-//
-//            override fun onFailure(call: Call<HttpResponse>, t: Throwable) {
-//                println("异步请求失败-> errMsg = ${t.message}")
-//            }
-//        })
+        call.enqueue(object : Callback<HttpResponse> {
+            override fun onResponse(call: Call<HttpResponse>, response: Response<HttpResponse>) {
+                val dataBean = response.body()
+                println("异步请求成功-> ${dataBean.toString()}")
+            }
+
+            override fun onFailure(call: Call<HttpResponse>, t: Throwable) {
+                println("异步请求失败-> errMsg = ${t.message}")
+            }
+        })
 
         val retrofit1 = Retrofit.Builder()
             .baseUrl(baseUrl)
